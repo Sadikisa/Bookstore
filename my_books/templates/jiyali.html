@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Buy & Hire Books</title>
+    <link rel="stylesheet" href="{% static  'chal/sadik.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">hello</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="{% url 'shop' %}">Shop</a></li>
+                <li><a href="{% url 'category' %}">Category</a></li>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="{% url 'about' %}">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="login.html" class="btn login">Login</a>
+            <a href="signup.html" class="btn signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Next Adventure</h1>
+                <p>Discover, buy, or hire books at the best prices.</p>
+                <a href="shop.html" class="btn">Browse Books</a>
+            </div>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section class="book-section">
+            <h2>Featured Books</h2>
+            <div class="book-container">
+                <div class="book">
+                    <img src="static/images/book1.jpg" alt="Book 1">
+                    <h3>The Art of Thinking Clearly</h3>
+                    <p>$14.99</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="book">
+                    <img src="static/images/book2.jpg" alt="Book 2">
+                    <h3>Atomic Habits</h3>
+                    <p>$19.99</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="book">
+                    <img src="static/images/book3.jpg" alt="Book 3">
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p>$12.50</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="book">
+                    <img src="static/images/book4.jpg" alt="Book 4">
+                    <h3>Deep Work</h3>
+                    <p>$18.99</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Book Haven | Designed with ❤️</p>
+    </footer>
+
+</body>
+</html>
+
